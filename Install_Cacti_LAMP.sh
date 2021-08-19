@@ -8,7 +8,9 @@ read -p "Enter the network this server is in: " SERVER_NETWORK
 read -p "CIDR Subnet mask: " SERVER_SUBNET
 read -p "Enter server name for Apache(If left blank then the IP of this server will be used): " SERVER_NAME
 read -s -p "MariaDB root user password: " MYSQL_ROOT_PW
+printf "\n"
 read -s -p "MariaDB cacti user password: " MYSQL_CACTI_PW
+printf "\n"
 read -p "Community string: " COMM_STRING
 
 if [[ -z $SERVER_NAME ]]; then
